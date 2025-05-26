@@ -103,8 +103,8 @@ jobs:
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar llvm g++-multilib bison gperf zlib1g-dev automake
 
           # check
-          ld.lld --version
-          clang --target=aarch64-linux-gnu -dumpspecs
+          # ld.lld --version
+          # clang --target=aarch64-linux-gnu -dumpspecs
 
       # Initialize ccache
       - name: 🚄 Setup ccache
