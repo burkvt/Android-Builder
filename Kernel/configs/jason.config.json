@@ -46,7 +46,8 @@
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis",
         "CONFIG_THINLTO": "",
-        "CFLAGS": "--sysroot=/home/runner/work/Android-Builder/Android-Builder/aarch64 --gcc-toolchain=/home/runner/work/Android-Builder/Android-Builder/aarch64 -no-integrated-as"
+        "CFLAGS": "--sysroot=/home/runner/work/Android-Builder/Android-Builder/aarch64 --gcc-toolchain=/home/runner/work/Android-Builder/Android-Builder/aarch64 -no-integrated-as",
+        "HOSTLD": "ld.lld"
       }
     },
     "AnyKernel3": {
