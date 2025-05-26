@@ -48,7 +48,7 @@ jobs:
       ARCH: arm64
       CROSS_COMPILE: aarch64-linux-android-
       CLANG_TRIPLE: aarch64-linux-gnu-
-      PATH: /usr/bin:/usr/sbin:${{ github.workspace }}/aarch64/bin:${{ github.workspace }}/clang/bin:$PATH
+      PATH: /usr/bin:/usr/sbin:${{ github.workspace }}/aarch64/bin:${{ github.workspace }}/clang/bin
       #
       # Basic configuration
       WORKSPACE: ${{ github.workspace }}
