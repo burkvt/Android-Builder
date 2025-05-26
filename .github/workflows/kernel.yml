@@ -316,7 +316,7 @@ jobs:
         run: |
           # check
 
-          tree /home/runner/work/Android-Builder/
+          # tree /home/runner/work/Android-Builder/
 
           export LD_LIBRARY_PATH=/home/runner/work/Android-Builder/Android-Builder/clang/lib
           export PATH="/home/runner/work/Android-Builder/Android-Builder/clang/bin:$PATH"
