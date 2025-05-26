@@ -11,7 +11,7 @@
       {
         "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-vortex",
         "branch": "15.0",
-        "name": "clang",
+        "name": "clang", 
         "binaryEnv": [
           "bin"
         ]
