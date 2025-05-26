@@ -34,6 +34,7 @@
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LD": "ld.lld",
+        "LD_LIBRARY_PATH": "/home/runner/work/Android-Builder/Android-Builder/clang/lib",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
         "OBJCOPY": "llvm-objcopy",
