@@ -9,6 +9,14 @@
     },
     "toolchains": [
       {
+        "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-vortex",
+        "branch": "15.0",
+        "name": "clang", 
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
         "repo": "https://github.com/crdroidandroid/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
         "branch": "15.0",
         "name": "aarch64",
