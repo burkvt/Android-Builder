@@ -48,7 +48,7 @@ jobs:
       ARCH: arm64
       CROSS_COMPILE: aarch64-linux-gnu-
       CLANG_TRIPLE: aarch64-linux-gnu-
-      # PATH: /home/runner/work/Android-Builder/Android-Builder/clang/bin:$PATH
+      PATH: ${{ github.workspace }}/aarch64/bin:${{ github.workspace }}/clang/bin:$PATH
       #
       # Basic configuration
       WORKSPACE: ${{ github.workspace }}
