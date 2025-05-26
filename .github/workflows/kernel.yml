@@ -309,6 +309,10 @@ jobs:
           ARGS: ${{ steps.generate-args.outputs.ARGS }}
         run: |
           # check
+
+          export LD_LIBRARY_PATH=/home/runner/work/Android-Builder/Android-Builder/clang/lib
+          export PATH="/home/runner/work/Android-Builder/Android-Builder/clang/bin:$PATH"
+          
           echo "ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
           ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin
           echo "/home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version"
