@@ -307,11 +307,25 @@ jobs:
         working-directory: ${{ env.KERNEL_NAME }}
         env:
           ARGS: ${{ steps.generate-args.outputs.ARGS }}
+          HOSTCC: gcc
+          HOSTCXX: g++
+          HOSTLD: ld
+          HOSTAR: ar
+          HOSTCFLAGS: "-I/usr/include/x86_64-linux-gnu"
+          HOSTLDFLAGS: "-L/usr/lib/x86_64-linux-gnu"
         run: |
           # check
 
           export LD_LIBRARY_PATH=/home/runner/work/Android-Builder/Android-Builder/clang/lib
           export PATH="/home/runner/work/Android-Builder/Android-Builder/clang/bin:$PATH"
+
+          export ARCH=arm64
+          export CROSS_COMPILE=aarch64-buildroot-linux-gnu-
+          export CC=clang
+          export CLANG_TRIPLE=aarch64-linux-gnu-
+          export LD=ld.lld
+
+          export PATH="/usr/bin:/bin:/home/runner/work/Android-Builder/Android-Builder/clang/bin:/home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
           
           echo "ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
           ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin
