@@ -334,6 +334,8 @@ jobs:
           echo "/home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version"
           /home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version
           
+          # curl -sL https://patchwork.kernel.org/project/linux-kbuild/patch/20230309145712.174921-1-masahiroy@kernel.org/patch/ | git apply 
+          
           echo "🤔 PATH Variable: $PATH"
           export KBUILD_BUILD_HOST=Github-Action
           export KBUILD_BUILD_USER=$(echo ${{ github.actor }} | tr A-Z a-z)
