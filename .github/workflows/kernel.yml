@@ -45,14 +45,14 @@ jobs:
         CONFIG: ${{ fromJSON(needs.Read-configuration.outputs.CONFIGS) }}
     env:
       # add patch
-      ARCH: arm64
-      CROSS_COMPILE: aarch64-linux-android-
-      CLANG_TRIPLE: aarch64-linux-gnu-
-      PATH: /usr/bin:/usr/sbin:${{ github.workspace }}/aarch64/bin:${{ github.workspace }}/clang/bin
-      #
-      # Basic configuration
-      WORKSPACE: ${{ github.workspace }}
-      BUILD_DATE: "${{ needs.Read-configuration.outputs.BUILD_DATE }}"
+      # ARCH: arm64
+      # CROSS_COMPILE: aarch64-linux-android-
+      # CLANG_TRIPLE: aarch64-linux-gnu-
+      # PATH: /usr/bin:/usr/sbin:${{ github.workspace }}/aarch64/bin:${{ github.workspace }}/clang/bin
+      # #
+      # # Basic configuration
+      # WORKSPACE: ${{ github.workspace }}
+      # BUILD_DATE: "${{ needs.Read-configuration.outputs.BUILD_DATE }}"
 
       # Kernel source configuration
       KERNEL_NAME: ${{ matrix.CONFIG.kernelSource.name }}
@@ -318,16 +318,16 @@ jobs:
 
           # tree /home/runner/work/Android-Builder/
 
-          export LD_LIBRARY_PATH=/home/runner/work/Android-Builder/Android-Builder/clang/lib
-          export PATH="/home/runner/work/Android-Builder/Android-Builder/clang/bin:$PATH"
+          # export LD_LIBRARY_PATH=/home/runner/work/Android-Builder/Android-Builder/clang/lib
+          # export PATH="/home/runner/work/Android-Builder/Android-Builder/clang/bin:$PATH"
 
-          export ARCH=arm64
-          export CROSS_COMPILE=aarch64-buildroot-linux-gnu-
-          export CC=clang
-          export CLANG_TRIPLE=aarch64-linux-gnu-
-          export LD=ld.lld
+          # export ARCH=arm64
+          # export CROSS_COMPILE=aarch64-buildroot-linux-gnu-
+          # export CC=clang
+          # export CLANG_TRIPLE=aarch64-linux-gnu-
+          # export LD=ld.lld
 
-          export PATH="/usr/bin:/bin:/home/runner/work/Android-Builder/Android-Builder/clang/bin:/home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
+          # export PATH="/usr/bin:/bin:/home/runner/work/Android-Builder/Android-Builder/clang/bin:/home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
           
           echo "ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
           ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin
