@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - ".github/workflows/kernel.yml"
+      - "Kernel/configs/jason.config.json"
   workflow_dispatch:
   schedule:
     - cron: "14 13 * * 5"
