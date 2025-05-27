@@ -331,8 +331,8 @@ jobs:
           
           echo "ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin"
           ls -l /home/runner/work/Android-Builder/Android-Builder/aarch64/bin
-          echo "/home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version"
-          /home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version
+          # echo "/home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version"
+          # /home/runner/work/Android-Builder/Android-Builder/clang/bin/clang --version
           
           # curl -sL https://patchwork.kernel.org/project/linux-kbuild/patch/20230309145712.174921-1-masahiroy@kernel.org/patch/ | git apply 
           
