@@ -1,24 +1,24 @@
 [
   {
     "kernelSource": {
-      "name": "XiaomiNote3-jason",
-      "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_jason",
-      "branch": "15.0",
+      "name": "XiaomiNote3-Jason",
+      "repo": "https://github.com/burkvt/android_kernel_xiaomi_sdm660",
+      "branch": "lineage-21-4.19",
       "device": "jason",
       "defconfig": "jason_defconfig"
     },
     "toolchains": [
       {
-        "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-vortex",
-        "branch": "15.0",
-        "name": "clang", 
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "clang",
         "binaryEnv": [
           "bin"
         ]
       },
       {
-        "repo": "https://github.com/crdroidandroid/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
-        "branch": "15.0",
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
+        "branch": "lineage-21.0",
         "name": "aarch64",
         "binaryEnv": [
           "bin"
@@ -34,7 +34,6 @@
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LD": "ld.lld",
-        "LD_LIBRARY_PATH": "/home/runner/work/Android-Builder/Android-Builder/clang/lib",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
         "OBJCOPY": "llvm-objcopy",
@@ -45,11 +44,7 @@
         "LDGOLD": "aarch64-linux-gnu-ld.gold",
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis",
-        "CONFIG_THINLTO": "",
-        "CFLAGS": "--sysroot=/home/runner/work/Android-Builder/Android-Builder/aarch64 --gcc-toolchain=/home/runner/work/Android-Builder/Android-Builder/aarch64 -no-integrated-as",
-        "HOSTLD": "ld.lld",
-        "KCFLAGS":"-Wno-error=parentheses-equality -Wno-error=dangling-pointer -Wno-dangling-pointer",
-        "CF":"-Wno-parentheses-equality -Wno-dangling-pointer"
+        "CONFIG_THINLTO": ""
       }
     },
     "AnyKernel3": {
